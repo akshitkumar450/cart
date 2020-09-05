@@ -1,0 +1,171 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #222;
+    background-color: whitesmoke;
+}
+nav{
+    display: flex;
+    background-color: rgb(231, 226, 221);
+    padding: 20px;
+    justify-content: space-around;
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#center{
+    letter-spacing: 5px;
+}
+#House{
+    color: orange;
+}
+#addcart{
+    background-color:rgb(231, 226, 221);
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 400px;
+    height: 100vw;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transform: translateX(400px);
+    transition: 0.5s;
+}
+
+
+.fa-cart-plus{
+    cursor: pointer;
+}
+
+#addcart i{
+    color: black;
+}
+
+#close-icon{
+    position: relative;
+}
+#close-icon i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#cart-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+#cart-items h1{
+    margin: 15px 0;
+}
+#cart-items button{
+    padding: 10px 15px;
+    border: 0;
+    background-color: orange;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 150px;
+}
+
+#main-head{
+    background: url('hero-bcg.jpeg');
+    min-height: 90vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+ 
+}
+
+#main-head div{
+    width: 800px;
+    height: 220px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255,0.6);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+#main-head button{
+    background-color: orange;
+    border: 0;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    color:white;
+}
+#main-head button:hover{
+    background-color:  transparent;
+    opacity: 0;
+}
+
+header h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: normal;
+}
+
+#products-1,#product-2{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    text-align: center;
+}
+img{
+    width: 300px;
+    border-radius: 5px;
+}
+img:hover{
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.items{
+    position: relative;
+    overflow: hidden;
+}
+
+.items>div{
+    font-weight: bold;
+    position: absolute;
+    bottom:90px;
+    right: 0; 
+    padding: 10px;
+    background-color: orange;
+    opacity: 0.7;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 130px;
+    /* transform: translateX(130px); */
+}
+img:hover .btncart{
+    transform: translateX(px);
+}
+
+.items>div i{
+    color:black;
+    margin:0 5px;
+}
+
+
